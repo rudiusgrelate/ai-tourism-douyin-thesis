@@ -1,0 +1,88 @@
+\documentclass[type = bachelor, openany]{whu-thesis}
+\usepackage{array}
+\usepackage{float}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\AtBeginDocument{%
+  \raggedbottom
+  \setlength{\abovedisplayskip}{0.35\baselineskip}%
+  \setlength{\belowdisplayskip}{0.35\baselineskip}%
+  \setlength{\abovedisplayshortskip}{0.2\baselineskip}%
+  \setlength{\belowdisplayshortskip}{0.2\baselineskip}%
+  \setlength{\textfloatsep}{0.6\baselineskip}%
+  \setlength{\floatsep}{0.5\baselineskip}%
+  \setlength{\intextsep}{0.5\baselineskip}%
+}
+\newenvironment{compactformula}
+  {\par\begingroup
+   \setlength{\abovedisplayskip}{0.2\baselineskip}%
+   \setlength{\belowdisplayskip}{0.2\baselineskip}%
+   \setlength{\abovedisplayshortskip}{0pt}%
+   \setlength{\belowdisplayshortskip}{0pt}%
+   \vspace{-0.4em}}
+  {\vspace{-0.6em}\par\endgroup}
+
+\whusetup{
+  info = {
+    title      = {AI 文旅短视频参与行为影响因素研究\\——以抖音省级文旅账号为例},
+    title*     = {Influencing Factors of User Engagement with AI Tourism Short Videos: Evidence from Provincial Tourism Accounts on Douyin},
+    department  = {信息管理学院},
+    department* = {School of Information Management},
+    author     = {魏公平},
+    author*    = {Weiping Wei},
+    student-id = {2022301042039},
+    supervisor  = {王楠},
+    supervisor* = {Nan Wang},
+    academic-title  = {副教授},
+    academic-title* = {Associate Professor},
+    subject = {管理学},
+    major   = {电子商务},
+    major*  = {Electronic Commerce},
+    research-area  = {数字营销与文旅传播},
+    research-area* = {Digital Marketing and Tourism Communication},
+    keywords = {AIGC, 文旅短视频, 传播效果, 用户互动},
+    keywords* = {AIGC, tourism short videos, communication effectiveness, user engagement},
+    year = 2026,
+    month = 5,
+  },
+  style = {
+    font = termes,
+    math-font = termes,
+    cjk-font = windows,
+    bib-backend = bibtex,
+    bib-resource = {ref/thesis-refs.bib},
+    abstract-keywords-type  = blankline,
+    abstract-keywords-type* = blankline,
+  }
+}
+
+\begin{document}
+\let\cleardoublepage\clearpage
+
+\tableofcontents
+
+\mainmatter
+
+\include{pages/chapter1.tex}
+\include{pages/chapter2.tex}
+\include{pages/chapter3.tex}
+\include{pages/chapter4.tex}
+\include{pages/chapter5.tex}
+\include{pages/chapter6.tex}
+\include{pages/chapter7.tex}
+
+\printbibliography
+
+\begin{acknowledgements}
+感谢指导教师王楠副教授在论文选题、研究设计、数据分析和论文写作过程中给予的耐心指导与帮助，使我能够不断完善研究思路并顺利完成论文。
+
+感谢家人长期以来给予我的理解、支持与包容。在学习和论文写作过程中，家人的陪伴与鼓励始终是我坚持完成本科阶段学习的重要力量。
+
+感谢朋友们在资料整理、论文修改与日常交流中给予的帮助与陪伴，使我能够在反复调整和完善中保持耐心与坚持。
+
+最后，感谢本科阶段学习过程中始终保持努力与自我要求的自己。
+\end{acknowledgements}
+
+\appendix
+\include{pages/appendix.tex}
+
+\end{document}
