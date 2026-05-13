@@ -1,27 +1,28 @@
-# GitHub 公开包说明
+ # AI Tourism Short Videos on Douyin
 
-## 建议公开
+  This repository contains the thesis source files, analysis scripts, and reproducible result files for the study:
 
-- `run_experiments_to_logs.py`
-- `ml_experiment_ai_tourism.py`
-- `build_final_analysis_dataset.py`
-- `FINAL_SUBMISSION_CHECKLIST.md`
-- `whuthesis/` 中论文源文件
-- `analysis_outputs/ml_experiment/机器学习补充实验结果.xlsx`
-- `logs/experiment_results.xlsx`
-- 变量说明、编码规则、README
+  AI 文旅短视频参与行为影响因素研究——以抖音省级文旅账号为例
 
-## 不建议公开
+  ## Repository Contents
 
-- `cookies.txt`
-- `cookies_www.douyin.com .txt`
-- `数据/原始数据/`
-- `数据/最终版数据.xlsx`
-- `ai_coding/` 与试复核截图
-- 任何包含浏览器会话、采集凭证、私密链接批量处理信息的文件
+  - `whuthesis/`: LaTeX thesis source files and compiled PDF
+  - `run_experiments_to_logs.py`: main statistical analysis script
+  - `ml_experiment_ai_tourism.py`: machine learning supplementary analysis script
+  - `build_final_analysis_dataset.py`: script for building the formal analysis dataset
+  - `logs/experiment_results.xlsx`: main statistical result file
+  - `analysis_outputs/ml_experiment/机器学习补充实验结果.xlsx`: supplementary machine learning result file
 
-## 关于双人一致性检验
+  ## Reproducibility
 
-本研究最终公开材料不应写“已完成正式双人一致性检验”。更稳妥的公开口径是：
+  This repository is intended to improve the transparency and reproducibility of the research process. Public materials
+  mainly include thesis source files, analysis code, result tables, and supplementary documentation.
 
-“本文以统一编码规则下的人工编码作为正式分析基础，并尝试使用 AI 对部分样本进行辅助复核，用于识别高分歧变量和修订编码边界，但未将其作为正式双人一致性检验结果报告。”
+  Some original research data are not fully public in this repository. To protect platform-related privacy and data
+  security, the public materials do not include cookies, browser session information, request headers, or other
+  sensitive access credentials.
+
+  ## Notes
+
+  - The formal analysis sample used in the paper contains 722 videos.
+  - Public files are limited to materials needed for method explanation, result checking, and paper reproduction.
